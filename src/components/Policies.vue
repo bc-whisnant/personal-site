@@ -47,8 +47,7 @@ const buttons = [
     <h6 class="mb-4">Privacy Policies</h6>
     <button v-for="button in buttons" 
       @click="toggleSelection(button.app)" 
-      class="btn btn-lg policy-btn me-1"
-      :class="[windowIsSmall && 'mb-4 w-100', button.app === 'skate' ? 'ms-1' : '']" data-bs-toggle="modal" data-bs-target="#policy-modal"
+      :class="['btn', 'btn-lg', 'policy-btn', 'me-1', windowIsSmall && 'mb-4 w-100', button.app === 'skate' ? 'ms-1' : '']" data-bs-toggle="modal" data-bs-target="#policy-modal"
     >
       {{ button.text }}
     </button>
