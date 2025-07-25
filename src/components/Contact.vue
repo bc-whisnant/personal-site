@@ -1,5 +1,4 @@
 <script setup>
-import { defineProps } from 'vue'
 
 const props = defineProps({
   windowIsSmall: Boolean
@@ -67,6 +66,4 @@ li .contact-btn {
   color: rgb(255, 255, 255);
   background-image: linear-gradient(243deg, rgb(140, 81, 214) 0%, rgba(222, 139, 93, 0.008) 74%);
 }
-
-@media
 </style>
