@@ -1,21 +1,25 @@
 <script setup>
+import { defineProps, } from 'vue'
 import Contact from './Contact.vue';
 import Policies from './Policies.vue';
+
+defineProps({ 
+  windowIsSmall: Boolean
+})
 
 </script>
 
 <template>
-
-  <div class="card" style="width: 35rem;">
+  <div class="card" :style="[windowIsSmall ? { width: '20rem' } : { width: '35rem' }]">
     <div class="card-body">
       <img class="card-img-top rounded-circle mb-2" src="../assets/b-gregg.jpeg" alt="Brandon and his wonderful cat Gregg">
       <h4 class="card-job-title">Software Engineer</h4>
       <h2 class="title">Brandon Whisnant</h2>
       <p class="card-text">I build things with code. I mainly specialize in frontend development and have spent a decade solving complex problems. </p>
       <p class="card-text">This site is mainly to store privacy policies for my iOS apps that I develop as a hobby.</p>
-      <Contact />
+      <Contact :windowIsSmall="windowIsSmall" />
       <div>
-        <Policies />
+        <Policies :windowIsSmall="windowIsSmall" />
       </div>
     </div>
   </div>
