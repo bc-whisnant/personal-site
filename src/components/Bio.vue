@@ -6,31 +6,50 @@ import Policies from './Policies.vue';
 
 <template>
 
-  <div class="col-sm mb-5">
-    <h2>Brandon Whisnant</h2>
-    <h4>Software Engineer</h4>
-    <p>Hi, I'm Brandon. I'm a software engineer but really I'm just a person that likes to tinker with things. I was born to be an engineer and was lucky enough to realize this at a rather young age.
-      Programming has taken me places that I never thought I would go. My main goal is to just keep writing code and
-      growing as a
-      developer. After a decade of experience I'm as passionate as ever and ready for whatever challenges come my way.
-    </p>
-    <div class="mt-2">
+  <div class="card" style="width: 35rem;">
+    <div class="card-body">
+      <img class="card-img-top rounded-circle mb-2" src="../assets/b-gregg.jpeg" alt="Brandon and his wonderful cat Gregg">
+      <h4 class="card-job-title">Software Engineer</h4>
+      <h2 class="title">Brandon Whisnant</h2>
+      <p class="card-text">I build things with code. I mainly specialize in frontend development and have spent a decade solving complex problems. </p>
+      <p class="card-text">This site is mainly to store privacy policies for my iOS apps that I develop as a hobby.</p>
       <Contact />
-    </div>
-    <div class="mt-4">
-      <p>Below are the privacy policies for the iOS apps I've created. Yes, these are only here because Apple complained about it.</p>
-      <Policies />
+      <div>
+        <Policies />
+      </div>
     </div>
   </div>
-  <div class="bio-img col-sm d-flex flex-column justify-content-center align-items-center">
-    <img src="../assets/b-gregg.jpeg" class="rounded-circle" alt="Brandon and his wonderful cat Gregg">
-  </div>
-
-
 </template>
 
 <style scoped>
-.bio-img img {
-  height: 300px;
+
+.card {
+  background-color: rgb(40, 39, 46) !important;
+  border:2px solid gray;
+  border-radius: 2rem !important;
 }
+
+.card-body img {
+  height: 100px;
+  width: 100px;
+  text-align: left;
+}
+
+.title {
+  font-size: 2.25em;
+  color: white;
+}
+
+.card-job-title {
+  background-color: rgb(222, 139, 93);
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(243deg, rgb(140, 81, 214) 0%, rgba(222, 139, 93, 0.008) 74%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card-text {
+  color: rgba(255, 255, 255, 0.61);
+}
+
 </style>
