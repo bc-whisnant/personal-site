@@ -72,7 +72,7 @@ const resetSelectedApp = () => emit('reset')
             please contact the Service Provider via email at bc.whisnant@gmail.com.</p>
         </div>
         <div class="modal-footer">
-          <button @click="resetSelectedApp" type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+          <button @click="resetSelectedApp" type="button" class="btn policy-modal-btn" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
@@ -80,4 +80,11 @@ const resetSelectedApp = () => emit('reset')
 
 </template>
 
-<style scoped></style>
+<style scoped>
+.policy-modal-btn {
+  border-radius: 2.5rem;
+  background-color: rgb(222, 139, 93);
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(243deg, rgb(140, 81, 214) 0%, rgba(222, 139, 93, 0.008) 74%);
+}
+</style>

@@ -15,7 +15,7 @@ defineProps({
       <img class="card-img-top rounded-circle mb-2" src="../assets/b-gregg.jpeg" alt="Brandon and his wonderful cat Gregg">
       <h4 class="card-job-title">Software Engineer</h4>
       <h2 class="title">Brandon Whisnant</h2>
-      <p class="card-text">I build things with code. I mainly specialize in frontend development and have spent a decade solving complex problems. </p>
+      <p class="card-text">I build things with code. I specialize in frontend development and have spent a decade solving complex problems. </p>
       <p class="card-text">This site is mainly to store privacy policies for my iOS apps that I develop as a hobby.</p>
       <Contact :windowIsSmall="windowIsSmall" />
       <div>
