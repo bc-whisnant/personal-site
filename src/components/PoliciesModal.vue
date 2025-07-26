@@ -81,7 +81,8 @@ const resetSelectedApp = () => emit('reset')
 </template>
 
 <style scoped>
-.policy-modal-btn {
+.policy-modal-btn,
+.policy-modal-btn:hover {
   border-radius: 2.5rem;
   background-color: rgb(222, 139, 93);
   color: rgb(255, 255, 255);
