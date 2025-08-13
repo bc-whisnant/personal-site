@@ -7,7 +7,7 @@ const props = defineProps({
 const items = [
   {
     itemClass: 'me-1',
-    link: '../assets/files/brandon-whisnant-engineer.pdf',
+    link: '../assets/files/brandon-whisnant-software-engineer-resume.pdf',
     linkClass: 'btn btn-lg contact-btn',
     linkText: 'Resume',
     type: 'file'
@@ -35,7 +35,7 @@ const items = [
     <ul class="d-flex" :class="[windowIsSmall && 'flex-column']">
       <li v-for="item in items" :class="[item.itemClass, windowIsSmall ? 'mb-4' : '']">
         <a :href="item.link" :class="[item.linkClass, windowIsSmall ? 'w-100' : '']"
-          :download="item.type === 'file' ? 'brandon-whisnant-engineer.pdf' : null"
+          :download="item.type === 'file' ? 'brandon-whisnant-frontend-engineer.pdf' : null"
           :target="item.type === 'link' ? '_blank' : null">{{ item.linkText }}</a>
       </li>
     </ul>
